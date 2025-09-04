@@ -2,4 +2,41 @@
 
 body {
   background-color: coral;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+  grid-template-rows: 0.5fr 1fr 0.25fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: aqua;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: aquamarine;
+}
+
+#form-submit {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: chartreuse;
+}
+
+#post-submit {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: blueviolet;
 }
