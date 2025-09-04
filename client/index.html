@@ -9,7 +9,25 @@
   </head>
   <body>
     <header>Guestbook Header</header>
-    <section id="form-submit">Form Section</section>
+    <section id="form-submit">
+      <h1>Form Section</h1>
+      <br /><label for="name">Name: </label>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <br /><label for="date-visited">Date Visited: </label>
+      <input type="datetime-local" id="date-visited" required />
+      <br /><label for="comments">Comments: </label
+      ><textarea
+        name="message"
+        id="comments"
+        rows="10"
+        cols="30"
+        placeholder="Please leave your comments here"
+        required
+      ></textarea>
+      <br /><label for="email">Email: </label>
+      <input type="email" id="email" placeholder="you@example.com" />
+      <br /><button id="submit-form-button" type="submit">Subit Form</button>
+    </section>
     <section id="post-submit">Post Section</section>
     <footer>Copyright Megabass Ltd ©</footer>
   </body>
