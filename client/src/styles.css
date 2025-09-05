@@ -27,7 +27,6 @@ footer {
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: aquamarine;
   align-content: center;
   text-align: center;
 }
@@ -58,19 +57,18 @@ footer {
   grid-row-start: 3;
   grid-row-end: 4;
   background-color: rgb(255, 0, 255);
-  padding: 20px;
   margin: 10px;
   align-content: center;
+  justify-items: center;
 }
 
 #form-comments {
   display: flex;
   flex-direction: column;
-
-  padding: 10px;
   margin: 5px;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
+  justify-items: center;
   max-width: 500px;
 }
 
