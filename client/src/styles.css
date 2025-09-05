@@ -81,8 +81,7 @@ footer {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  overflow: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -90,4 +89,19 @@ div.comment {
   background-color: white;
   margin: 10px;
   white-space: pre-line;
+}
+
+#hidden-thanks {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: none;
+  justify-content: center;
+  justify-items: center;
+}
+
+#hidden-thanks img {
+  width: 100%;
+  height: auto;
 }

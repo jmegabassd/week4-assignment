@@ -1,6 +1,7 @@
 console.log("MOO!");
 
 const commentsForm = document.getElementById("form-comments");
+const thanksForm = document.getElementById("hidden-thanks");
 commentsForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
@@ -14,6 +15,8 @@ function handleSubmit(event) {
     },
     body: JSON.stringify({ formValues }),
   });
+  commentsForm.style.display = "none";
+  thanksForm.style.display = "block";
 }
 
 async function getGuestMessages() {
