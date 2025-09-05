@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
 
 app.get("/comments", async (req, res) => {
   const query = await db.query(
-    "select name, visitdate, comments, email from guestform"
+    "select name, visitdate, comments from guestform"
   );
   console.log(query);
   res.json(query.rows);

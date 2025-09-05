@@ -4,9 +4,10 @@ body {
   background-color: coral;
   display: grid;
   grid-template-columns: 0.25fr 0.75fr 1fr 0.25fr;
-  grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr;
+  grid-template-rows: 0.125fr 0.125fr 1fr 0.125fr;
   height: 100vh;
   width: 100vw;
+  font-family: sans-serif;
 }
 
 header {
@@ -17,7 +18,8 @@ header {
   background-color: aqua;
   align-content: center;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  border-radius: 10px;
 }
 
 footer {
@@ -35,6 +37,9 @@ footer {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
 }
 
 #post-heading-container {
@@ -42,6 +47,9 @@ footer {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
 }
 
 #form-submit {
@@ -49,14 +57,16 @@ footer {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: chartreuse;
+  background-color: rgb(255, 0, 255);
   padding: 20px;
   margin: 10px;
+  align-content: center;
 }
 
 #form-comments {
   display: flex;
   flex-direction: column;
+
   padding: 10px;
   margin: 5px;
   gap: 5px;
@@ -71,4 +81,15 @@ footer {
   grid-row-end: 4;
   background-color: blueviolet;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+div.comment {
+  background-color: white;
+  margin: 10px;
+  white-space: pre-line;
 }
