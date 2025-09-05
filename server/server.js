@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
 
 app.get("/comments", async (req, res) => {
   const query = await db.query(
-    "select name, visitdate, comments from guestform"
+    "select name, visitdate, comments, email from guestform"
   );
   console.log(query);
   res.json(query.rows);
@@ -27,12 +27,13 @@ app.get("/comments", async (req, res) => {
 app.post("/comments-add", (req, res) => {
   const newComments = req.body;
   const query = db.query(
-    `INSERT INTO guestform (name, visitdate, comments)
-    VALUES ($1, $2, $3)`,
+    `INSERT INTO guestform (name, visitdate, comments, email)
+    VALUES ($1, $2, $3, $4)`,
     [
-      newComments.formValues.name,
-      newComments.formValues.visitdate,
-      newComments.formValues.comments,
+      newComments.name,
+      newComments.visitdate,
+      newComments.comments,
+      newComments.email,
     ]
   );
   res.json("Data sent", query);
