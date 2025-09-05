@@ -3,7 +3,7 @@
 body {
   background-color: coral;
   display: grid;
-  grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+  grid-template-columns: 0.25fr 0.75fr 1fr 0.25fr;
   grid-template-rows: 0.25fr 1fr 0.25fr;
   height: 100vh;
   width: 100vw;
@@ -15,6 +15,9 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: aqua;
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
 }
 
 footer {
@@ -23,6 +26,8 @@ footer {
   grid-row-start: 3;
   grid-row-end: 4;
   background-color: aquamarine;
+  align-content: center;
+  text-align: center;
 }
 
 #form-submit {
@@ -31,6 +36,13 @@ footer {
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+  gap: 5px;
+  justify-content: center;
+  max-width: 500px;
 }
 
 #post-submit {
@@ -39,4 +51,5 @@ footer {
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: blueviolet;
+  margin: 10px;
 }

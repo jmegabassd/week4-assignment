@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./src/images/favicon-16x16.png"
+    />
     <script type="module" src="./src/app.js" defer></script>
     <link rel="stylesheet" href="./src/styles.css" />
     <title>Guestbook</title>
@@ -11,23 +16,29 @@
     <header>Guestbook Header</header>
     <section id="form-submit">
       <h1>Form Section</h1>
-      <br /><label for="name">Name: </label>
+
+      <label for="name">Name: </label>
       <input type="text" id="name" placeholder="Your Name" required />
-      <br /><label for="date-visited">Date Visited: </label>
+
+      <label for="date-visited">Date Visited: </label>
       <input type="datetime-local" id="date-visited" required />
-      <br /><label for="comments">Comments: </label
+
+      <label for="comments">Comments: </label
       ><textarea
-        name="message"
+        name="comments"
         id="comments"
         rows="10"
         cols="30"
         placeholder="Please leave your comments here"
         required
       ></textarea>
-      <br /><label for="email">Email: </label>
+
+      <label for="email">Email: </label>
       <input type="email" id="email" placeholder="you@example.com" />
-      <br /><button id="submit-form-button" type="submit">Subit Form</button>
+
+      <button id="submit-form-button" type="submit">Submit Form</button>
     </section>
+
     <section id="post-submit">Post Section</section>
     <footer>Copyright Megabass Ltd ©</footer>
   </body>
