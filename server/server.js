@@ -30,10 +30,10 @@ app.post("/comments-add", (req, res) => {
     `INSERT INTO guestform (name, visitdate, comments, email)
     VALUES ($1, $2, $3, $4)`,
     [
-      newComments.name,
-      newComments.visitdate,
-      newComments.comments,
-      newComments.email,
+      newComments.formValues.name,
+      newComments.formValues.visitdate,
+      newComments.formValues.comments,
+      newComments.formValues.email,
     ]
   );
   res.json("Data sent", query);

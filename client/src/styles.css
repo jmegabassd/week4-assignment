@@ -50,10 +50,15 @@ footer {
   grid-row-start: 3;
   grid-row-end: 4;
   background-color: chartreuse;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
   margin: 10px;
+}
+
+#form-comments {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
   gap: 5px;
   justify-content: center;
   max-width: 500px;
