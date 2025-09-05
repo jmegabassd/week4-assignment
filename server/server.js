@@ -23,3 +23,17 @@ app.get("/comments", async (req, res) => {
   console.log(query);
   res.json(query.rows);
 });
+
+app.post("/comments-add", (req, res) => {
+  const newComments = req.body;
+  const query = db.query(
+    `INSERT INTO guestform (name, visitdate, comments)
+    VALUES ($1, $2, $3)`,
+    [
+      newComments.formValues.name,
+      newComments.formValues.visitdate,
+      newComments.formValues.comments,
+    ]
+  );
+  res.json("Data sent", query);
+});
