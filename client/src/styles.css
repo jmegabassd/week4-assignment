@@ -136,10 +136,9 @@ h2 {
 #submit-form-button {
   cursor: pointer;
 }
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: landscape) {
   * {
     touch-action: manipulation;
-    touch-action: pan-x pan-y;
   }
   body img {
     height: auto;
