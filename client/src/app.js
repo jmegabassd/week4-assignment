@@ -23,21 +23,25 @@ function handleSubmit(event) {
 }
 
 async function getGuestMessages() {
-  const response = await fetch("http://localhost:7777/comments");
-  const json = await response.json();
-  console.log("JSON Data:", json);
   const messagecontainer = document.getElementById("post-submit");
   messagecontainer.innerHTML = "";
+  const response = await fetch("http://localhost:7777/comments");
+  const json = await response.json();
   json.forEach((item) => {
     const visitDate = new Date(item.visitdate);
     const formattedDate = visitDate.toLocaleDateString();
     const formattedTime = visitDate.toLocaleTimeString();
     const messageDiv = document.createElement("div");
     messageDiv.classList.add("comment");
-    messageDiv.textContent = `${item.name}\n${formattedDate} at ${formattedTime}\n${item.comments}`;
+    messageDiv.textContent = `${item.name}\n${formattedDate} at ${formattedTime}\n`;
+    const p = document.createElement("p");
+    p.classList.add("message-content");
+    p.textContent = item.comments;
+
+    messageDiv.appendChild(p);
     messagecontainer.appendChild(messageDiv);
   });
 }
 
-setInterval(getGuestMessages, 30000);
 getGuestMessages();
+setInterval(getGuestMessages, 60000);

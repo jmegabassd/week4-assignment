@@ -1,13 +1,20 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 body {
-  /* background-color: coral; */
   display: grid;
   grid-template-columns: 0.25fr 0.75fr 1fr 0.25fr;
   grid-template-rows: 0.125fr 0.125fr 1fr 0.125fr;
   height: 100vh;
   width: 100vw;
-  font-family: sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url(./images/brian.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body img {
+  height: 100%;
+  width: auto;
 }
 
 header {
@@ -15,11 +22,13 @@ header {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  /* background-color: aqua; */
   align-content: center;
   text-align: center;
   font-size: 40px;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.438);
 }
 
 footer {
@@ -29,6 +38,7 @@ footer {
   grid-row-end: 5;
   align-content: center;
   text-align: center;
+  color: white;
 }
 
 #form-heading-container {
@@ -39,6 +49,7 @@ footer {
   align-content: center;
   text-align: center;
   font-size: 30px;
+  color: white;
 }
 
 #post-heading-container {
@@ -49,6 +60,7 @@ footer {
   align-content: center;
   text-align: center;
   font-size: 30px;
+  color: white;
 }
 
 #form-submit {
@@ -56,9 +68,10 @@ footer {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: rgb(255, 0, 255);
   margin: 10px;
-  justify-content: flex-start;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.438);
+  border-radius: 10px;
   justify-items: center;
 }
 
@@ -67,9 +80,8 @@ footer {
   flex-direction: column;
   margin: 5px;
   gap: 10px;
-  justify-content: center;
-  justify-items: center;
   max-width: 500px;
+  align-items: center;
 }
 
 #post-submit {
@@ -77,18 +89,21 @@ footer {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: blueviolet;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
+  gap: 10px;
 }
 
 div.comment {
-  background-color: white;
-  margin: 10px;
+  margin: 5px;
   white-space: pre-line;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.438);
 }
 
 #hidden-thanks {
@@ -110,4 +125,83 @@ h2 {
   font-size: 15px;
   margin: 10px;
   text-align: center;
+}
+
+p {
+  cursor: pointer;
+}
+
+#submit-form-button {
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  * {
+    touch-action: manipulation;
+  }
+  body img {
+    height: auto;
+    width: 480;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/brian-mobile.webp);
+  }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 0;
+  }
+  #form-heading-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 20px;
+  }
+  #form-submit {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 15px;
+  }
+
+  #hidden-thanks {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #post-heading-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size: 20px;
+  }
+  #post-submit {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    font-size: 15px;
+  }
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    font-size: 15px;
+  }
+  div.comment {
+    font-size: 15px;
+  }
 }
