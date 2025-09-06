@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 body {
-  background-color: coral;
+  /* background-color: coral; */
   display: grid;
   grid-template-columns: 0.25fr 0.75fr 1fr 0.25fr;
   grid-template-rows: 0.125fr 0.125fr 1fr 0.125fr;
@@ -15,7 +15,7 @@ header {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: aqua;
+  /* background-color: aqua; */
   align-content: center;
   text-align: center;
   font-size: 40px;
@@ -58,7 +58,7 @@ footer {
   grid-row-end: 4;
   background-color: rgb(255, 0, 255);
   margin: 10px;
-  align-content: center;
+  justify-content: flex-start;
   justify-items: center;
 }
 
@@ -104,4 +104,10 @@ div.comment {
 #hidden-thanks img {
   width: 100%;
   height: auto;
+}
+
+h2 {
+  font-size: 15px;
+  margin: 10px;
+  text-align: center;
 }
