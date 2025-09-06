@@ -1,6 +1,6 @@
 console.log("MOO!");
 
-const audio = new Audio("./src/audio/click.mp3");
+const audio = new Audio("/audio/click.mp3");
 const commentsForm = document.getElementById("form-comments");
 const thanksForm = document.getElementById("hidden-thanks");
 
