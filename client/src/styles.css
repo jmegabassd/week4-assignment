@@ -139,6 +139,8 @@ h2 {
 @media (max-width: 480px) {
   * {
     touch-action: manipulation;
+    touch-action: pan-x pan-y;
+    height: 100%;
   }
   body img {
     height: auto;
