@@ -10,7 +10,7 @@ function handleSubmit(event) {
   event.preventDefault();
   const formData = new FormData(commentsForm);
   const formValues = Object.fromEntries(formData);
-  fetch("http://localhost:7777/comments-add", {
+  fetch("https://week-4-assignment-server-jnnt.onrender.com/comments-add", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -25,7 +25,9 @@ function handleSubmit(event) {
 async function getGuestMessages() {
   const messagecontainer = document.getElementById("post-submit");
   messagecontainer.innerHTML = "";
-  const response = await fetch("http://localhost:7777/comments");
+  const response = await fetch(
+    "https://week-4-assignment-server-jnnt.onrender.com/comments"
+  );
   const json = await response.json();
   json.forEach((item) => {
     const visitDate = new Date(item.visitdate);
@@ -37,7 +39,6 @@ async function getGuestMessages() {
     const p = document.createElement("p");
     p.classList.add("message-content");
     p.textContent = item.comments;
-
     messageDiv.appendChild(p);
     messagecontainer.appendChild(messageDiv);
   });
