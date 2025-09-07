@@ -136,6 +136,50 @@ h2 {
 #submit-form-button {
   cursor: pointer;
 }
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(27, 165, 22, 0.76)
+  );
+}
+
+textarea:invalid {
+  border: 2px solid red;
+}
+
+textarea:valid {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(27, 165, 22, 0.76)
+  );
+}
+input:invalid:required {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(22, 124, 165, 0.76)
+  );
+}
+
+textarea:invalid:required {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(22, 124, 165, 0.76)
+  );
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 @media (max-width: 480px) {
   * {
     touch-action: manipulation;
