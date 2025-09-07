@@ -31,8 +31,16 @@ async function getGuestMessages() {
   const json = await response.json();
   json.forEach((item) => {
     const visitDate = new Date(item.visitdate);
-    const formattedDate = visitDate.toLocaleDateString();
-    const formattedTime = visitDate.toLocaleTimeString();
+    const formattedDate = visitDate.toLocaleDateString([], {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    const formattedTime = visitDate.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
     const messageDiv = document.createElement("div");
     messageDiv.classList.add("comment");
     messageDiv.textContent = `${item.name}\n${formattedDate} at ${formattedTime}\n`;
