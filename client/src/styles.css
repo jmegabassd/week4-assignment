@@ -104,6 +104,7 @@ footer {
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-color: rgba(22, 124, 165, 0.76) rgba(0, 0, 0, 0.6);
   gap: 10px;
 }
 
