@@ -19,8 +19,6 @@
 
 # Optional
 
-> ##🏹 Feel free to add any other reflections you would like to share about your submission, for example:
-
 > Tha main issue I had was with @Media, it works in portait mode but landscape breaks the page. I now realise after inspecting the page with dev tools that on landscape grid is altered and changes orientation, I couldn't figure out how to make it retain the original orientation. If this is the case, either another massive @ media is needed which seems overkill or I need to make the page using less grid. I'm not sure....
 
 > What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
