@@ -12,11 +12,6 @@ body {
   background-size: cover;
 }
 
-body img {
-  height: 100%;
-  width: auto;
-}
-
 header {
   grid-column-start: 2;
   grid-column-end: 4;
@@ -26,7 +21,14 @@ header {
   text-align: center;
   font-size: 40px;
   color: white;
-  background-color: rgba(22, 124, 165, 0.76);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(22, 124, 165, 0.76)
+  );
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 footer {
@@ -48,8 +50,9 @@ footer {
   text-align: center;
   font-size: 30px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-right: 2px solid rgba(22, 124, 165, 0.76);
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 15px;
+  border-radius: 10px;
 }
 
 #post-heading-container {
@@ -61,8 +64,9 @@ footer {
   text-align: center;
   font-size: 30px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-left: 2px solid rgba(22, 124, 165, 0.76);
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 15px;
+  border-radius: 10px;
 }
 
 #form-submit {
@@ -82,7 +86,11 @@ footer {
   margin: 5px;
   gap: 10px;
   align-items: center;
-  background-color: rgba(22, 124, 165, 0.76);
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.6),
+    rgba(22, 124, 165, 0.76)
+  );
   border-radius: 10px;
   padding: 10px;
 }
@@ -106,7 +114,11 @@ div.comment {
   padding: 5px;
   color: white;
   font-size: 20px;
-  background-color: rgba(22, 124, 165, 0.76);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(22, 124, 165, 0.76)
+  );
 }
 
 #hidden-thanks {
@@ -128,9 +140,10 @@ h2 {
   font-size: 15px;
   margin: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 5px;
   border-radius: 10px;
+  margin: 15px;
 }
 
 #submit-form-button {
