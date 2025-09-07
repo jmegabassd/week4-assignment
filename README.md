@@ -3,9 +3,13 @@
 # 🎯 What requirements did you achieve?
 
 > Ensure your HTML form is working and submitting data into the database as expected. YES
+> 
 > Confirm that your project is functional on multiple screen sizes using either Responsive Design or media queries. YES
+> 
 > Create a working GET API route in your server. YES
+> 
 > Create a working POST API route in your client. YES
+> 
 > Seed your database with realistic-looking ‘dummy’ data. YES
 
 > 🎯 Were there any requirements or goals that you were unable to achieve?
