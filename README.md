@@ -24,15 +24,27 @@
 > What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
 
 > (https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
+> 
 > (https://stackoverflow.com/questions/2928688/how-to-hide-elements-without-having-them-take-space-on-the-page)
+> 
 > (https://developer.mozilla.org/en-US/docs/Web/API/Document/append)
+> 
 > (https://pixabay.com/sound-effects/search/clicks/)
+> 
 > (https://audiotrimmer.com/#google_vignette)
+> 
 > (https://dev.to/shantanu_jana/how-to-play-sound-on-button-click-in-javascript-3m48)
+> 
 > (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date)
+> 
 > (https://stackoverflow.com/questions/11847806/javascript-date-set-just-the-date-ignoring-time)
+> 
 > (https://stackoverflow.com/questions/33854602/targeting-text-area-or-input-using-css-for-valid-invalid-in-css)
+> 
 > (https://css-tricks.com/almanac/pseudo-selectors/i/invalid/)
+> 
 > (https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
+> 
 > (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling)
+> 
 > (https://stackoverflow.com/questions/56469995/javascript-tolocaletimestring-2-digit-only-second-or-minute-not-working)
